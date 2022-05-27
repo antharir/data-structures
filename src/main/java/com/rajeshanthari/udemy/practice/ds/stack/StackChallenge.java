@@ -1,7 +1,5 @@
 package com.rajeshanthari.udemy.practice.ds.stack;
 
-import java.util.ArrayList;
-import java.util.LinkedList;
 import java.util.stream.Collectors;
 
 public class StackChallenge {
