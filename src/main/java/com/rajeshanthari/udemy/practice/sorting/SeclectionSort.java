@@ -1,0 +1,35 @@
+package com.rajeshanthari.udemy.practice.sorting;
+
+import java.util.Arrays;
+
+public class SeclectionSort {
+
+	public static void main(String[] args) {
+		int[] nums = new int[] { 25, 35, -15, 7, 55, 1, -22 };
+		System.out.println(Arrays.toString(nums));
+		selectionSort(nums);
+		System.out.println(Arrays.toString(nums));
+	}
+
+	public static void selectionSort(int[] arr) {
+
+		for (int unsortedIndex = arr.length - 1; unsortedIndex > 0; unsortedIndex--) {
+			int largest = 0;
+			for (int j = 1; j <= unsortedIndex; j++) {
+				if (arr[j] > arr[largest]) {
+					largest = j;
+				}
+			}
+			swap(arr, largest, unsortedIndex);
+		}
+	}
+
+	public static void swap(int[] arr, int from, int to) {
+		if ( from == to ) {
+			return;
+		}
+		int temp = arr[to];
+		arr[to] = arr[from];
+		arr[from] = temp;
+	}
+}
