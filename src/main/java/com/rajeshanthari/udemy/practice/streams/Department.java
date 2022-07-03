@@ -1,4 +1,4 @@
-package com.rajeshanthari.udemy.practice.ds.stack;
+package com.rajeshanthari.udemy.practice.streams;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -7,9 +7,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 @Data
-public class Employee {
+public class Department {
 	private int id;
-	private String firstName;
-	private String lastName;
-	
+	private String name;
 }
